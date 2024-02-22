@@ -1,38 +1,97 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: linear-gradient(to bottom, #4d94ff, #66b3ff, #80ccff, #99d6ff, #b3e0ff);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+h1 {
   text-align: center;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-group {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group-append {
   display: flex;
-  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  height: 33px;
+  width: 80%;
+  font-size: 16px;
+  transition: width 0.3s ease, font-size 0.3s ease;
+  border-radius: 20px;
+}
+
+.btn {
+  margin-top: 12px;
+  height: 32px;
+  width: 75px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
 }
