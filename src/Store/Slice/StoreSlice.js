@@ -9,9 +9,10 @@ const UserSlice = createSlice({
     },
     deleteUser: (state, action) => {
       state.splice(action.payload,1)
+      
     },
     clearUser: (state, action) => {
-      state.splice(0,state.length)
+      state.splice(0,state.length,action.payload)
     },
   },
 });
